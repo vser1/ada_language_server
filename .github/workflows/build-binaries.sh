@@ -18,6 +18,8 @@ $PWD/subprojects/stubs
 export CPATH=/usr/local/include:/mingw64/include
 export LIBRARY_PATH=/usr/local/lib:/mingw64/lib
 export DYLD_LIBRARY_PATH=/usr/local/lib
+export PATH=`ls -d $PWD/cached_gnat/*/bin |tr '\n' ':'`$PATH
+echo PATH=$PATH
 
 BRANCH=master
 
